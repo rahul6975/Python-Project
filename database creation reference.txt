@@ -1,0 +1,30 @@
+mysql> create database GARV;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use GARV;
+Database changed
+
+mysql> create table GARV (id varchar(4) primary key, name varchar(20),middle varchar(20),surname varchar(20),dob varchar(8),email varchar(40),cont bigint(10),pswrd varchar(40) ,qlfc varchar(25),teaching int(2),medical int(2),govt int(2),defence int(2),bank int(2),jee int(2));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> desc GARV;
++------------+-------------------+------+-------+---------+-------+
+| Field       | Type                | Null | Key  | Default | Extra |
++------------+-------------------+------+-------+---------+-------+
+| id              | varchar(4)      | NO   | PRI |              |       |
+| name       | varchar(20)   | YES  |        | NULL    |       |
+| middle     | varchar(20)  | YES  |         | NULL    |       |
+| surname  | varchar(20)  | YES  |         | NULL    |       |
+| dob          | varchar(8)    | YES  |         | NULL    |       |
+| email       | varchar(40) | YES  |          | NULL    |       |
+| cont         | bigint(10)     | YES  |         | NULL    |       |
+| pswrd      | varchar(40) | YES  | UNI | NULL    |       |
+| qlfc         | varchar(25) | YES  |          | NULL    |       |
+| teaching | int(2)            | YES  |          | NULL    |       |
+| medical   | int(2)           | YES  |          | NULL    |       |
+| govt         | int(2)           | YES  |          | NULL    |       |
+| defence  | int(2)           | YES  |          | NULL    |       |
+| bank        | int(2)           | YES  |          | NULL    |       |
+| jee           | int(2)           | YES  |          | NULL    |       |
++------------+-----------------+------+--------+---------+-------+
+15 rows in set (0.02 sec)
